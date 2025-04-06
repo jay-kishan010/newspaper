@@ -25,9 +25,9 @@
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box blue-bg">
-              <i class="fa fa-cloud-download"></i>
-              <div class="count">6.674</div>
-              <div class="title">Download</div>
+              <i class="fa fa-globe"></i>
+              <div class="count"><?php echo $misc->getNumPosts(); ?></div>
+              <div class="title">News</div>
             </div>
             <!--/.info-box-->
           </div>
@@ -35,9 +35,9 @@
 
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box brown-bg">
-              <i class="fa fa-shopping-cart"></i>
-              <div class="count">7.538</div>
-              <div class="title">Purchased</div>
+              <i class="fa fa-users"></i>
+              <div class="count"><?php echo $misc->getNumUsers();?></div>
+              <div class="title">Users</div>
             </div>
             <!--/.info-box-->
           </div>
@@ -45,9 +45,9 @@
 
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box dark-bg">
-              <i class="fa fa-thumbs-o-up"></i>
-              <div class="count">4.362</div>
-              <div class="title">Order</div>
+              <i class="fa fa-comments"></i>
+              <div class="count"><?php echo $misc->getNumComments();?></div>
+              <div class="title">Comments</div>
             </div>
             <!--/.info-box-->
           </div>
@@ -56,8 +56,8 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box green-bg">
               <i class="fa fa-cubes"></i>
-              <div class="count">1.426</div>
-              <div class="title">Stock</div>
+              <div class="count"><?php echo $misc->getNumCategories();?></div>
+              <div class="title">Categories</div>
             </div>
             <!--/.info-box-->
           </div>

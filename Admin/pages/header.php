@@ -3,6 +3,9 @@ include '../config/config.php';
 include '../class/User.php';
 include '../class/Category.php';
 include '../class/Post.php';
+include '../class/Comment.php';
+include '../class/Misc.php';
+
 
 if(isset($_SESSION['admin_user'])) {
   $user = $_SESSION['admin_user'];
@@ -14,6 +17,8 @@ else{
 $user_obj = new User($connection, $user);
 $cat_obj = new Category($connection, $user);
 $post_obj = new Post($connection, $user);
+$comment_obj = new Comment($connection);
+$misc=new Misc($connection);
  ?>
 
 

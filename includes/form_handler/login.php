@@ -9,6 +9,7 @@ if(isset($_POST['login'])) {
 	$sql = mysqli_query($mysqli, "SELECT * FROM users WHERE email='$email'");
 	$row = mysqli_fetch_array($sql);
 	$db_email = $row['email'];
+	$id = $row['id'];
 	$db_password = $row['password'];
 	$db_username = $row['username'];
 	$rehashedPwd = md5($pwd);

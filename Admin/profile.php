@@ -110,7 +110,7 @@ if(isset($_GET['user_id'])) {
                             <p><span>Lastname</span>: <?php echo $lastname; ?></p>
                             <p><span>Email</span>: <?php echo $email; ?></p>
                             <p><span>Role</span>: <?php echo $role; ?></p>
-                            <p><span>Number of Posts</span>: <?php echo $num_posts; ?></p>
+                            <p><span>Number of Posts</span>: <?php echo $user_obj->getNumPosts(); ?></p>
                           </div>
                         </div>
                       </div>

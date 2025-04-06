@@ -73,4 +73,49 @@
  		}
  		echo $str;
  	}
+
+ 	public function getPostByCat($id)
+		{
+			$query = mysqli_query($this->conn, "SELECT * FROM news WHERE post_cat_id = $id ORDER BY id DESC LIMIT 10");
+			$str = "";
+		if (mysqli_num_rows($query) === 0) {
+			$str = "<h2 class='text-center text-danger'>No results found!</h2>";
+		}	
+		else {
+			while ($row = mysqli_fetch_array($query)) {
+				$id = $row['id'];
+				$content = $row['content'];
+				if (strlen($content) > 200) {
+					$content = substr($content, 0, 200) . "...";
+				}
+				$category = $row['post_category'];
+				$post_cat_id = $row['post_cat_id'];
+				$image = $row['post_image'];
+				$num_likes = $row['num_likes'];
+				$num_comments = $row['num_comments'];
+
+				$str .= "<div class='col-12 col-md-6'>
+                            <div class='single-blog-post style-3'>
+                                <div class='post-thumb'>
+                                    <a href='single-post.php?post_id=$id&cat_r=$category'><img src='Admin/$image'></a>
+                                </div>
+                                <div class='post-data'>
+                                    <a href='category.php?c_id=$post_cat_id' class='post-catagory'>$category</a>
+                                    <a href='single-post.php?post_id=$id&cat_r=$category' class='post-title'>
+                                        <h6>$content</h6>
+                                    </a>
+                                    <div class='post-meta d-flex align-items-center'>
+                                        <a href='#' class='post-like'><img src='img/core-img/like.png'> <span>$num_likes</span></a>
+                                        <a href='#' class='post-comment'><img src='img/core-img/chat.png'> <span>$num_comments</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>";
+			}
+		}
+			echo $str;
+		}
+		
+
+ 	
  }

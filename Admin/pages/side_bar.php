@@ -70,6 +70,12 @@
                 
             </a>       
           </li>
+          <li class="active">
+            <a class="" href="pdf.php">
+                          <i class="fa fa-suitcase"></i>
+                          <span>Add PDF</span>
+                      </a>
+          </li>
         </ul>
         <!-- sidebar menu end-->
       </div>

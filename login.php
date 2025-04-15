@@ -9,7 +9,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Login  | Creative - Bootstrap 3 Responsive Admin Template</title>
+  <title>Login  | Arya Tv</title>
 
   <!-- Bootstrap CSS -->
   <link href="Admin/css/bootstrap.min.css" rel="stylesheet">

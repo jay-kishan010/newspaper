@@ -70,47 +70,7 @@
 
 
 
-        <div class="row">
-        
-
-          <div class="col-lg-9 col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Registered Users</strong></h2>
-                <div class="panel-actions">
-                  <a href="index.php" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
-                  <a href="index.php" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-                  <a href="index.php" class="btn-close"><i class="fa fa-times"></i></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <table class="table bootstrap-datatable countries">
-                  <thead>
-                    <tr>
-                      <th>Country</th>
-                      <th>Users</th>
-                      <th>Online</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Germany</td>
-                      <td>2563</td>
-                      <td>1025</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-            </div>
-
-          </div>
-          <!--/col-->
-          
-            <!--/social-box-->
-
-          </div>
-          <!--/col-->
+      
 
       
 
